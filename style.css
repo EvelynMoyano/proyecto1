@@ -1,113 +1,211 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("http://fonts.cdnfonts.com/css/cf-night-of-terror-personal");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Permanent Marker", cursive;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.7em;
 }
 
 a {
   text-decoration: none;
 }
 
-.hero {
-  width: 100%;
-  height: 150vh;
+#mainheader {
   background-image: url(img/20375455.jpg);
-  /* background-image: url(img/1158837.png); */
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.flex-3,
+.flex-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtitle {
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 nav {
+  height: 150px;
+}
+
+nav .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 30px 100px;
-  background: rgba(218, 211, 216, 0.149);
-  border-radius: 16px;
-  border: 1px solid rgba(234, 11, 11, 0.796);
+  align-items: center;
+  height: 100%;
 }
 
 nav ul li {
-  display: inline-block;
   list-style: none;
+  display: inline-block;
   padding: 10px 20px;
-  font-size: 20px;
 }
 
 nav ul li a {
-  color: white;
+  color: black;
   padding: 5px 0;
+  transition: 0.9s;
 }
 
 nav ul li a:hover {
-  color: red;
+  color: #851919cb;
 }
 
 .logo {
-  max-width: 60px;
+  max-height: 50px;
 }
 
-.boton {
-  display: inline-block;
-  transition-duration: 0.4s;
-  background: red;
-  border: 2px solid red;
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  padding: 16px 40px;
-  border-radius: 50px;
-}
-
-.boton:hover {
-  background: transparent;
-  border-color: red;
-  color: red;
-}
-
-.content {
+.hero {
   position: absolute;
-  top: 25%;
-  width: 47%;
-  margin: 90px;
+  top: 30%;
+  left: 6%;
 }
 
-.content h1 {
-  color: #1f1f25;
-  font-size: 150px;
-  font-weight: 900;
-  line-height: 150px;
-  text-transform: inherit;
-  width: 70%;
-  /* margin-bottom: 20px; */
-  text-shadow: 2px 2px 7px white;
+.hero h1 {
+  color: #fff;
+  font-size: 75px;
+  font-weight: 700;
 }
 
-.content p {
-  margin-bottom: 40px;
-  font-size: 35px;
-  text-shadow: 1px 1px 7px white;
-}
-
-h1 span {
-  color: red;
+.hero h1 span {
+  color: #851919cb;
   font-family: "CF Night of Terror PERSONAL", sans-serif;
 }
 
-/* .sec {
-  height: 700px;
-  width: 100%;
-  background-color: #333;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  /* flex-flow: row wrap; */
-/* justify-content: space-evenly;
+.hero p {
+  color: #fff;
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  transition: all 0.5s ease;
+  background: #851919cb;
+  border: 2px solid #851919cb;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: #851919cb;
+  color: #851919cb;
+}
+
+#galeria {
+  padding: 80px 0;
+}
+
+#galeria img {
+  height: 500px;
+  margin: 20px;
   align-items: center;
-  align-content: space-evenly;
+}
+
+#sobremi {
+  padding: 80px 0 0 0;
+  background-image: linear-gradient(#191918, #535353);
+}
+
+#sobremi img {
+  height: 550px;
+}
+
+.about-text {
+  padding: 80px 0 0 40px;
+}
+
+#mainfooter {
+  background: #000;
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+}
+
+/* h1 span {
+  color: #851919cb;
+  font-family: "CF Night of Terror PERSONAL", sans-serif;
 } */
+
+/* .video {
+  display: flex;
+  width: 100%;
+  height: 750px;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(img/FQEVLXR01X2E1634600097644.jpg);
+}
+
+.video iframe {
+  width: 50%;
+  height: 500px;
+} */
+
+@media (max-width: 600px) {
+  nav {
+    padding: 5px 20px;
+  }
+
+  nav ul li {
+    padding: 5px 0;
+  }
+
+  nav ul li a {
+    padding: 5px 2px;
+    font-size: 10px;
+  }
+
+  .container h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .container p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #galeria .flex-3,
+  #sobremi .flex-2 {
+    flex-direction: column;
+  }
+
+  #galeria img {
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  #sobremi {
+    padding-bottom: 80px;
+  }
+}

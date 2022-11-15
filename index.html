@@ -6,70 +6,119 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/94b0db02ea.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.cdnfonts.com/css/cf-night-of-terror-personal" rel="stylesheet">
   <title>Ghostface</title>
 </head>
 
 <body>
 
-  <header>
-    <div class="hero">
-      <nav>
-        <img src="img/252179.png" class="logo">
+  <header id="mainheader">
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <img src="img/252179.png" alt="cuchillo" class="logo">
+        </div>
+
+
         <ul>
-          <li><a href="#">Inicio</a> </li>
-          <li><a href="#sec1">Sobre Mi</a></li>
-          <li><a href="#sec2">Servicios de asesinatos</a></li>
-          <li><a href="#sec3">Galeria</a></li>
+          <li><a href="#galeria">Mis Cuchillos</a></li>
+          <li><a href="#sobremi">Sobre Mi</a></li>
+          <li><a href="#servicios">Servicios de asesinatos</a></li>
         </ul>
-        <a href="#" class="boton">Contactame</a>
-      </nav>
+
+
+        <a href="#" class="btn">Contactame</a>
+      </div>
+    </nav>
+
+
+
+    <div class="hero">
+      <div class="container">
+        <h1>Hola, soy <span>Ghostface</span></h1>
+        <p>Nunca debes decir ‘¿Quién está ahí?’ ¿No ves películas de terror?</p>
+        <a href="#" class="btn">Descargar CV</a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section>
-      <div class="content">
-        <h1>Hola, soy <span>Ghostface</span></h1>
-        <p>Nunca debes decir ‘¿Quién está ahí?’ ¿No ves películas de terror?</p>
-        <a href="#" class="boton">Descargar CV</a>
+
+  <section id="galeria">
+    <div class="container">
+      <div class="subtitle">
+        <h2>Mis cuchillos</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod reiciendis perspiciatis libero quis molestias
+          molestiae ad ut beatae in nobis.
+        </p>
       </div>
-    </section>
-
-
-  </main>
-
-  <!-- <h2 id="sec1">Sobre Mi</h2>
-  <section class="sec"></section>
-  <h2 id="sec2">Servicios de asesinatos</h2>
-  <section class="sec"></section>
-  <h2 id="sec3">Galeria</h2>
-  <section class="sec"></section> -->
-
-  <!-- <section>
-    <div>
-      <h2>Sobre Mi</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid amet impedit quis, quibusdam accusamus.
-        Et assumenda impedit ad veniam nostrum deleniti perferendis! Nesciunt aspernatur quam sint architecto dolore
-        sapiente.</p>
+      <div class="flex-3">
+        <img src="galeria/cuchillo1.jpg" alt="cuchillo1">
+        <img src="galeria/cuchillo2.jpg" alt="cuchillo2">
+        <img src="galeria/cuchillo3.jpg" alt="cuchillo3">
+      </div>
     </div>
   </section>
 
-  <section>
-    <div>
+  <section id="sobremi">
+    <div class="container">
+      <div class="subtitle">
+        <h2>Sobre Mi</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod reiciendis perspiciatis libero quis molestias
+          molestiae ad ut beatae in nobis.
+        </p>
+      </div>
+      <div class="flex-2">
+        <img src="img/288-2888335_ghostface-ghost-face-mask.png" alt="">
+        <div class="about-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ullam sint fuga ratione ipsa, sapiente
+            asperiores praesentium, debitis error veniam dicta architecto inventore voluptas beatae commodi accusantium
+            quisquam ex aliquid excepturi illum officia id blanditiis est. Eaque cum soluta alias, corrupti, at ad quae
+            error molestiae modi laborum consequuntur est? Eaque fugit, repellendus deleniti ipsa in voluptas eius
+            officiis doloribus. Veniam culpa vero repellat, fugiat sed voluptatibus perspiciatis hic repudiandae
+            ratione, at quaerat. Debitis repudiandae a quod, placeat odit ullam.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore provident voluptate quam laboriosam,
+            sapiente possimus reprehenderit necessitatibus accusantium autem qui similique facere, consequuntur odit
+            minima optio. Temporibus placeat, excepturi exercitationem distinctio, nesciunt dolore amet ut cupiditate,
+            quisquam ratione autem. Quasi!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="servicios">
+    <div class="container">
       <h2>Servicios de asesinatos</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, illo voluptatem. Molestias exercitationem quia
-        cupiditate et illum beatae perferendis dignissimos quibusdam consectetur non rem velit qui quis, mollitia
-        dolorum dolores.</p>
+
+      <div class="video">
+        <iframe width="600" height="315" src="https://www.youtube.com/embed/QKTYxSgKstY" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="mainfooter">
+    <div class="container">
+      <p>Todos los derechos son reservados por copyright</p>
+      <div class="redes">
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
     </div>
   </section>
 
-  <section>
-    <div>
-      <h2>Galeria</h2>
-    </div>
-  </section>
 
-  <footer></footer> -->
 
 </body>
 
